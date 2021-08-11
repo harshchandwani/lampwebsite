@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp Website</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menuimg">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/harsh-chandwani/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/harsh_chandwani_/" target="_blank">Instagram</a></li>
+                <li><a href="https://auth.geeksforgeeks.org/user/harshchandwani50028/practice/" target="_blank">GeeksforGeeks</a></li>
+                <li><a href="https://github.com/harshchandwani" target="_blank">Github</a></li>
+            </ul>
+            
+                </nav>
+        <div class="lampcontainer">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+        <div class="textcontainer">
+            <h1>
+                Lights
+            </h1>
+            <br>
+            <p>
+                This website is created by Harsh Chandwani, a second year B.Tech. CSE student of Chandigarh Group of Colleges, Landran. He is Web Developer, Competitive Coder and a Good Human. You can connect me through given Social Links.
+            </p>
+            <br>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+   <script>
+       var btn = document.getElementById("btn");
+       var light = document.getElementById("light");
+       function togglebtn(){
+           btn.classList.toggle("active");
+           light.classList.toggle("on");
+       }
+   </script>
+</body>
+</html>
